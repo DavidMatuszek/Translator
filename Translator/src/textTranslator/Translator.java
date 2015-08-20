@@ -114,32 +114,33 @@ public class Translator extends JFrame {
     }
 
     private void createTranslateMenu() {
-        addTranslateItem(new TextWrapTranslator());
-        addTranslateItem(new UnwrapTranslator());
-        addTranslateItem(new IndentationFixer());
-        addTranslateItem(new ParenthesisChecker());
-        addTranslateItem(new ZapGremlinsTranslator());
-        addTranslateItem(new TextToHtmlTranslator());
+        addTranslateItem(new BalanceChecker());
+        addTranslateItem(new DedentEvenlyTranslator());
+        addTranslateItem(new DetabTranslator());
+        addTranslateItem(new DoubleSpaceTranslator());
+        addTranslateItem(new EntabTranslator());
+        addTranslateItem(new FlowTextTranslator());
         addTranslateItem(new HtmlToTextTranslator());
-        addTranslateItem(new TextToPowerpoint());
+        addTranslateItem(new IndentationFixer());
+        addTranslateItem(new KeynoteToText());
+        addTranslateItem(new NestingChecker());
+        addTranslateItem(new ParenthesisChecker());
+        addTranslateItem(new PigLatinTranslator());
         addTranslateItem(new PowerpointToText());
         addTranslateItem(new ShowHex());
-        addTranslateItem(new TokenizerTranslator());
-        addTranslateItem(new PigLatinTranslator());
-
-        addTranslateItem(new DetabTranslator());
-        addTranslateItem(new EntabTranslator());
-        addTranslateItem(new UnixNewlinesTranslator());
-        addTranslateItem(new WindowsNewlinesTranslator());
         addTranslateItem(new SingleSpaceTranslator());
-        addTranslateItem(new DoubleSpaceTranslator());
+        addTranslateItem(new TextToHtmlTranslator());
+        addTranslateItem(new TextToKeynote());
+        addTranslateItem(new TextToPowerpoint());
+        addTranslateItem(new TextWrapTranslator());
+        addTranslateItem(new TokenizerTranslator());
         addTranslateItem(new UnderscoresToCamelCaseTranslator());
-        addTranslateItem(new WrapTextTranslator());
-        addTranslateItem(new FlowTextTranslator());
-        addTranslateItem(new BalanceChecker());
-        addTranslateItem(new NestingChecker());
+        addTranslateItem(new UnixNewlinesTranslator());
         addTranslateItem(new UnSmartQuoteTranslator());
-        addTranslateItem(new DedentEvenlyTranslator());
+        addTranslateItem(new UnwrapTranslator());
+        addTranslateItem(new WindowsNewlinesTranslator());
+        addTranslateItem(new WrapTextTranslator());
+        addTranslateItem(new ZapGremlinsTranslator());
     }
 
     private void addTranslateItem(TranslatorInterface translator) {
