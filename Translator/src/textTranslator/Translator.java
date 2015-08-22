@@ -122,10 +122,12 @@ public class Translator extends JFrame {
         addTranslateItem(new FlowTextTranslator());
         addTranslateItem(new HtmlToTextTranslator());
         addTranslateItem(new IndentationFixer());
+        addTranslateItem(new KeynoteToPowerPoint());
         addTranslateItem(new KeynoteToText());
         addTranslateItem(new NestingChecker());
         addTranslateItem(new ParenthesisChecker());
         addTranslateItem(new PigLatinTranslator());
+        addTranslateItem(new PowerPointToKeynote());
         addTranslateItem(new PowerpointToText());
         addTranslateItem(new ShowHex());
         addTranslateItem(new SingleSpaceTranslator());
